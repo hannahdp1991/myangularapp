@@ -1,0 +1,15 @@
+<strong  class="error-message">{{submitMessage}}</strong>
+
+<form [formGroup] = 'loginForm' (ngSubmit) = 'loginSubmit()'>
+<div class = "box">
+<label>UserName :
+    <input class="username" matInput formControlName ='username' #username>
+</label>
+<label>Password :
+    <input class="password" matInput type = 'password' formControlName='password' #password>
+</label>
+<button type="submit" mat-button class="btn">Sign In</button>
+<button type="button" mat-button (click) = "openSignUpForm()" id="btn2">Sign Up</button>
+</div>
+</form>
+<router-outlet name="signUpOutlet"></router-outlet>

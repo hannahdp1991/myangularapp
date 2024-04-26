@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7abdf97d-7da8-4022-aac4-44e689a78f2a/resourceGroups/CloudDemoHannah/providers/Microsoft.Web/sites/AngularFrontEndHannah",
+    "appService.deploySubpath": "dist"
+}

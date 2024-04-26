@@ -1,0 +1,33 @@
+<mat-toolbar>
+  <h2>User Registration</h2>
+</mat-toolbar>
+<form [formGroup]='signUpForm' (ngSubmit)="OnSubmit()">
+  <mat-card>
+    <mat-card-content>
+      <div class="form-group">
+        <label data-error="Required field!">UserName :
+          <input class="validate" type="text" formControlName="UserName"   #UserName>
+        </label>
+      </div>
+      <div class="form-group">
+        <label>Password
+          :
+          <input class="password" type="password" formControlName='Password' #Password >
+        </label>
+      </div>
+      <div class="form-group">
+        <label>Full Name :
+          <input type="text" formControlName="FullName" #FullName>
+        </label>
+      </div>
+      <div class="form-group">
+        <label>Contact :
+          <input type="text" name="Contact" formControlName = "Contact" #Contact>
+        </label>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="btn"  type="submit">Submit</button>
+    </mat-card-actions>
+  </mat-card>
+</form>
